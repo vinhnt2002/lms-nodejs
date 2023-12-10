@@ -85,7 +85,7 @@ export const registrationUser = CatchAsyncErrors(
         return next(new ErrorHandler(error.message, 400));
       }
     } catch (error: any) {
-      return next(new ErrorHandler(error.message, 400));
+      return next(new ErrorHandler(error.message, 500));
     }
   }
 );

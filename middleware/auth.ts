@@ -36,9 +36,9 @@ export const isAuthenticated = CatchAsyncErrors(
   }
 );
 
-
-
 // validate user role 
+// ["admin", "manager", "user"]
+
 export const authorized = (...roles: string[]) => {
     return (req: Request, res: Response,next: NextFunction) => {
         if(!roles.includes(req.user?.role || '')) {

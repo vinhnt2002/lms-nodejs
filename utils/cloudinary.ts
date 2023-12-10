@@ -3,7 +3,7 @@ import cloudinary from "cloudinary";
 export const uploadImageToCloudinary = async (
   image: string,
   folder: string,
-  width: number
+  width?: number
 ) => {
   const result = await cloudinary.v2.uploader.upload(image, { width, folder });
 

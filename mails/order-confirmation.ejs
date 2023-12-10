@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    
+      /* Layout and typography */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 14px; 
+        color: #333;
+      }
+      
+      h1, h2, h3 {
+        color: #06c;  
+      }
+      
+      a {
+        color: #26a;
+      }
+       
+      /* Email container */
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f6f6f6; 
+        border-top: 4px solid #06c;
+      }
+       
+      /* Header */
+      .header {
+        background-color: #06c;
+        color: #fff; 
+        padding: 20px;
+        text-align: center; 
+      }
+       
+      /* Order details */ 
+      .order-details {
+        padding: 20px;
+        background-color: #fff;  
+      }
+       
+      /* Order summary */
+      .order-summary {
+        background-color: #eee; 
+        padding: 20px;
+        border-top: 1px solid #dadce0;
+      }
+       
+      /* Footer */
+      .footer {
+         background-color: #fff;
+         color: #8f9091;
+         padding: 20px; 
+         border-top: 1px solid #dadce0;   
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+
+    <!-- Email container -->
+    <div class="email-container">
+    
+      <!-- Email header -->
+      <div class="header">
+        <h1>Your Order Confirmation</h1>
+        <p>Order: #<%= order._id %></p>  
+      </div>
+      
+      <!-- Order details -->
+      <div class="order-details">
+        <h2>Order Details</h2>
+        
+        <p><b>Date Placed:</b> <%= order.data %></p>
+        
+        <h3><%= order.name %></h3>
+        <p><b>Price:</b> $<%= order.price %></p> 
+        
+        <p>
+          Thank you for your order! This email contains all the details of your recent order.
+        </p>
+      </div>
+       
+      <!-- Order summary -->
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        
+        <p><b>Items:</b> 1</p>
+        <p><b>Total:</b> $<%= order.price %></p>   
+      </div>
+      
+      <!-- Email footer -->
+      <div class="footer">
+        <p>Have a question? <a href="mailto:support@example.com">Contact us</a></p> 
+        <p>&copy; 2023 Company Name</p>
+      </div>
+      
+    </div>
+
+  </body>
+</html>

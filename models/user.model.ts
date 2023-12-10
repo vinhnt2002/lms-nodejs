@@ -79,6 +79,7 @@ userSchema.methods.comparePassword = async function (enteredPassword: string) : 
     return await bcrypt.compare(enteredPassword, this.password)
 }
 
+
 // --------------jwt--------------
 
 //sign access token 
