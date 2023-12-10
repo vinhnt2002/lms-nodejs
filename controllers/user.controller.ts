@@ -13,7 +13,7 @@ import cloudinary from 'cloudinary'
 import sendMail from "../utils/send-mail";
 import { sendToken } from "../utils/jwt";
 import { redis } from "../utils/redis";
-import { getUserById } from '../services/user.service';
+import { getAllUsersServices, getUserById, updateUserRoleServices } from '../services/user.service';
 import { deleteImageFromCloudinary, uploadImageToCloudinary } from '../utils/cloudinary';
 
 //register user
@@ -392,6 +392,49 @@ export const updateProfilePicture = CatchAsyncErrors(async(req:Request, res: Res
 
     await user?.save();
     await redis.set(userId, JSON.stringify(user));
+  } catch (error: any) {
+    return next(new ErrorHandler(error.message, 400));
+  }
+})
+
+// get all user --admin
+export const getAllUsers = CatchAsyncErrors(async(req:Request, res: Response, next : NextFunction) => {
+  try {
+    getAllUsersServices(res);
+  } catch (error: any) {
+    return next(new ErrorHandler(error.message, 400));
+  }
+})
+
+// update user role --admin
+export const updateUserRole = CatchAsyncErrors(async(req:Request, res: Response, next : NextFunction) => {
+  try {
+    const {id, role} = req.body;
+    updateUserRoleServices(res, id, role);
+  } catch (error: any) {
+    return next(new ErrorHandler(error.message, 400));
+  }
+})
+// delete user  --admin
+export const deleteUser = CatchAsyncErrors(async(req:Request, res: Response, next : NextFunction) => {
+  try {
+    const {id} = req.params;
+
+    const user = await userModal.findById(id)
+
+    if(!user){
+      return next(new ErrorHandler("User not found", 400))
+    }
+
+    await user.deleteOne({id})
+
+    await redis.del(id)
+
+    res.status(200).json({
+      success: true,
+      message: "delete successfully"
+    })
+
   } catch (error: any) {
     return next(new ErrorHandler(error.message, 400));
   }

@@ -4,7 +4,7 @@ import ErrorHandler from "../utils/error-handler";
 import { IOrder } from "../models/order.model";
 import userModal from "../models/user.model";
 import courseModel from "../models/course.model";
-import { newOrder } from "../services/order.service";
+import { getAllOrderServices, newOrder } from "../services/order.service";
 import ejs from "ejs";
 import path from "path";
 import sendMail from "../utils/send-mail";
@@ -90,24 +90,14 @@ export const createOrder = CatchAsyncErrors(
     }
   }
 );
-// export const createOrder = CatchAsyncErrors(async(req: Request, res: Response, next: NextFunction) => {
-//     try {
+// get all user --admin
+export const getAllOrders = CatchAsyncErrors(async(req:Request, res: Response, next : NextFunction) => {
+  try {
+    getAllOrderServices(res);
+  } catch (error: any) {
+    return next(new ErrorHandler(error.message, 400));
+  }
+})
 
-//     } catch (error: any) {
-//         return next(new ErrorHandler(error.message, 400))
-//     }
-// })
-// export const createOrder = CatchAsyncErrors(async(req: Request, res: Response, next: NextFunction) => {
-//     try {
 
-//     } catch (error: any) {
-//         return next(new ErrorHandler(error.message, 400))
-//     }
-// })
-// export const createOrder = CatchAsyncErrors(async(req: Request, res: Response, next: NextFunction) => {
-//     try {
-
-//     } catch (error: any) {
-//         return next(new ErrorHandler(error.message, 400))
-//     }
-// })
+// payemnt momo -zalopay ....  --later
