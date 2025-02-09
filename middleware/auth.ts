@@ -21,6 +21,8 @@ export const isAuthenticated = CatchAsyncErrors(
       process.env.ACCESS_TOKEN as string
     ) as JwtPayload;
 
+
+
     if (!decoded) {
       return next(new ErrorHandler("Access token is not valid", 400));
     }

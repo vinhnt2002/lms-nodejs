@@ -1,0 +1,128 @@
+
+# scp -pr G:\workspace\work\younet\space\docker-compose.yaml root@14.225.204.144:/root/move-mate-space
+# docker-compose -f ./docker-compose.yaml up -d rabbit
+# docker-compose -f ./docker-compose.yaml up -d redis
+# docker-compose -f ./docker-compose.yaml up -d redisinsight
+
+# down
+# docker-compose -f ./docker-compose.yaml rm -s -f redis
+
+services:
+  rabbit:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=root
+      - RABBITMQ_DEFAULT_PASS=admin123
+    volumes:
+      - ./rabbit_data:/var/lib/rabbitmq
+  mysql:
+    image: mysql:5
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: eca_reports
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis:/data
+    command: ["redis-server", "--appendonly", "yes"]
+  redisinsight:
+    image: redis/redisinsight:latest
+    container_name: redisinsight
+    ports:
+      - 5540:5540 
+    depends_on:
+      - redis
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: admin123
+    volumes:
+        - ./mongo_data:/data/db
+    ports:
+        - "27017:27017"
+    command: ["--bind_ip_all", "--auth"]
+  
+  postgres:
+    image: postgres:14.1-alpine
+    shm_size: 1gb
+    command: postgres -c 'shared_buffers=1GB' -c 'work_mem=800MB'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes: 
+      - ./postgres_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+        PGADMIN_DEFAULT_EMAIL: admin@admin.com
+        PGADMIN_DEFAULT_PASSWORD: admin 
+    ports:
+        - "8080:80"
+
+
+
+
+        # redis:
+        #   image: redis:3.0.7-alpine
+        #   container_name: redis
+        #   ports:
+        #     - 6379:6379
+        #   volumes:
+        #     - ./redis_data:/data
+        #   command: ["redis-server", "--appendonly", "yes", "--appendfsync", "always"]
+        # redis:
+        #   image: redis:3.0.7-alpine
+        #   container_name: redis
+        #   ports:
+        #     - 6379:6379
+
+
+
+        # ----
+          # redis:
+          #   image: redis:3.0.7-alpine
+          #   container_name: redis
+          #   ports:
+          #     - 6379:6379
+          #   volumes:
+          #     - ./redis_data:/data
+          #   command: ["redis-server", "--appendonly", "yes", "--appendfsync", "no"]
+          # redisinsight:
+          #   image: redis/redisinsight:latest
+          #   container_name: redisinsight
+          #   ports:
+          #     - 5540:5540 
+          #   depends_on:
+          #     - redis
+
+
+              # redis:
+              #   image: redis:6.2.6-alpine  
+              #   container_name: redis
+              #   ports:
+              #     - 6379:6379
+              #   volumes:
+              #     - ./redis_data:/data
+              #   command: ["redis-server", "--appendonly", "yes", "--appendfsync", "everysec", "--save", "900", "1", "--save", "300", "10", "--save", "60", "10000"]
+                    
+              # redisinsight:
+              #   image: redis/redisinsight:latest
+              #   container_name: redisinsight
+              #   ports:
+              #     - 5540:5540
+              #   depends_on:
+              #     - redis

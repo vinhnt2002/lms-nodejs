@@ -119,14 +119,14 @@ export const getAllCourse = CatchAsyncErrors(
       const isCachedCourse = await redis.get("allCourse");
 
       if (isCachedCourse) {
-        // console.log("store in redis")
+        console.log("store in redis")
         const courses = JSON.parse(isCachedCourse);
         res.status(200).json({
           success: true,
           courses,
         });
       } else {
-        // console.log("store in mongodb")
+        console.log("store in mongodb")
 
         await redis.set("allCourse", JSON.stringify(courses));
         res.status(200).json({
