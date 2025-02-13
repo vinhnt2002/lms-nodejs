@@ -29,3 +29,99 @@ $24
 67a8b00cb9093067416ce0a5
 $295
 {"_id":"67a8b00cb9093067416ce0a5","name":"thanhvinh","email":"thanhvinhco1234@gmail.com","password":"$2a$10$Qpb34.DBA8V/ZcOmuWjttO6sq/68RT/v9cJzaS1qUHi.xM7GVorsi","role":"user","isVerified":false,"courses":[],"createdAt":"2025-02-09T13:39:24.143Z","updatedAt":"2025-02-09T13:39:24.143Z","__v":0}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+set
+$24
+67adac32334f5ebc1c7971e4
+$1131
+{"thumbnail":{"public_id":"uploads/1739435057986-757988840.jpeg"},"_id":"67adac32334f5ebc1c7971e4","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adac32334f5ebc1c7971e5"},{"title":"Build Real-World Projects","_id":"67adac32334f5ebc1c7971e6"},{"title":"Master React.js and Node.js","_id":"67adac32334f5ebc1c7971e7"},{"title":"Database Design with MongoDB","_id":"67adac32334f5ebc1c7971e8"},{"title":"Deploy Applications to Production","_id":"67adac32334f5ebc1c7971e9"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adac32334f5ebc1c7971ea"},{"title":"Basic Programming Concepts","_id":"67adac32334f5ebc1c7971eb"},{"title":"Computer with Internet Connection","_id":"67adac32334f5ebc1c7971ec"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adb77d85bfdf87f8997b8f
+$1130
+{"thumbnail":{"public_id":"uploads/1739437949535-40005396.jpeg"},"_id":"67adb77d85bfdf87f8997b8f","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adb77d85bfdf87f8997b90"},{"title":"Build Real-World Projects","_id":"67adb77d85bfdf87f8997b91"},{"title":"Master React.js and Node.js","_id":"67adb77d85bfdf87f8997b92"},{"title":"Database Design with MongoDB","_id":"67adb77d85bfdf87f8997b93"},{"title":"Deploy Applications to Production","_id":"67adb77d85bfdf87f8997b94"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adb77d85bfdf87f8997b95"},{"title":"Basic Programming Concepts","_id":"67adb77d85bfdf87f8997b96"},{"title":"Computer with Internet Connection","_id":"67adb77d85bfdf87f8997b97"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$9
+allCourse
+$2264
+[{"thumbnail":{"public_id":"uploads/1739437949535-40005396.jpeg"},"_id":"67adb77d85bfdf87f8997b8f","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adb77d85bfdf87f8997b90"},{"title":"Build Real-World Projects","_id":"67adb77d85bfdf87f8997b91"},{"title":"Master React.js and Node.js","_id":"67adb77d85bfdf87f8997b92"},{"title":"Database Design with MongoDB","_id":"67adb77d85bfdf87f8997b93"},{"title":"Deploy Applications to Production","_id":"67adb77d85bfdf87f8997b94"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adb77d85bfdf87f8997b95"},{"title":"Basic Programming Concepts","_id":"67adb77d85bfdf87f8997b96"},{"title":"Computer with Internet Connection","_id":"67adb77d85bfdf87f8997b97"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0},{"thumbnail":{"public_id":"uploads/1739438272043-320473596.jpeg"},"_id":"67adb8c09c6b2e4bc339df11","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adb8c09c6b2e4bc339df12"},{"title":"Build Real-World Projects","_id":"67adb8c09c6b2e4bc339df13"},{"title":"Master React.js and Node.js","_id":"67adb8c09c6b2e4bc339df14"},{"title":"Database Design with MongoDB","_id":"67adb8c09c6b2e4bc339df15"},{"title":"Deploy Applications to Production","_id":"67adb8c09c6b2e4bc339df16"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adb8c09c6b2e4bc339df17"},{"title":"Basic Programming Concepts","_id":"67adb8c09c6b2e4bc339df18"},{"title":"Computer with Internet Connection","_id":"67adb8c09c6b2e4bc339df19"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}]
+*3
+$3
+set
+$24
+67adb8c09c6b2e4bc339df11
+$4
+null
+*3
+$3
+set
+$24
+67adb9f4efa2271916ec40b2
+$1131
+{"thumbnail":{"public_id":"uploads/1739438580252-188119673.jpeg"},"_id":"67adb9f4efa2271916ec40b2","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adb9f4efa2271916ec40b3"},{"title":"Build Real-World Projects","_id":"67adb9f4efa2271916ec40b4"},{"title":"Master React.js and Node.js","_id":"67adb9f4efa2271916ec40b5"},{"title":"Database Design with MongoDB","_id":"67adb9f4efa2271916ec40b6"},{"title":"Deploy Applications to Production","_id":"67adb9f4efa2271916ec40b7"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adb9f4efa2271916ec40b8"},{"title":"Basic Programming Concepts","_id":"67adb9f4efa2271916ec40b9"},{"title":"Computer with Internet Connection","_id":"67adb9f4efa2271916ec40ba"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adbab0dcdb71cd75ff11dd
+$1131
+{"thumbnail":{"public_id":"uploads/1739438768170-858521459.jpeg"},"_id":"67adbab0dcdb71cd75ff11dd","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adbab0dcdb71cd75ff11de"},{"title":"Build Real-World Projects","_id":"67adbab0dcdb71cd75ff11df"},{"title":"Master React.js and Node.js","_id":"67adbab0dcdb71cd75ff11e0"},{"title":"Database Design with MongoDB","_id":"67adbab0dcdb71cd75ff11e1"},{"title":"Deploy Applications to Production","_id":"67adbab0dcdb71cd75ff11e2"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adbab0dcdb71cd75ff11e3"},{"title":"Basic Programming Concepts","_id":"67adbab0dcdb71cd75ff11e4"},{"title":"Computer with Internet Connection","_id":"67adbab0dcdb71cd75ff11e5"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adbcd1c0b6f6fdb894c279
+$1131
+{"thumbnail":{"public_id":"uploads/1739439313205-211063433.jpeg"},"_id":"67adbcd1c0b6f6fdb894c279","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adbcd1c0b6f6fdb894c27a"},{"title":"Build Real-World Projects","_id":"67adbcd1c0b6f6fdb894c27b"},{"title":"Master React.js and Node.js","_id":"67adbcd1c0b6f6fdb894c27c"},{"title":"Database Design with MongoDB","_id":"67adbcd1c0b6f6fdb894c27d"},{"title":"Deploy Applications to Production","_id":"67adbcd1c0b6f6fdb894c27e"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adbcd1c0b6f6fdb894c27f"},{"title":"Basic Programming Concepts","_id":"67adbcd1c0b6f6fdb894c280"},{"title":"Computer with Internet Connection","_id":"67adbcd1c0b6f6fdb894c281"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adbdb15925aab2249df112
+$4
+null
+*3
+$3
+set
+$24
+67adbe5b6a179ddaeaee8cba
+$1131
+{"thumbnail":{"public_id":"uploads/1739439707327-282881854.jpeg"},"_id":"67adbe5b6a179ddaeaee8cba","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adbe5b6a179ddaeaee8cbb"},{"title":"Build Real-World Projects","_id":"67adbe5b6a179ddaeaee8cbc"},{"title":"Master React.js and Node.js","_id":"67adbe5b6a179ddaeaee8cbd"},{"title":"Database Design with MongoDB","_id":"67adbe5b6a179ddaeaee8cbe"},{"title":"Deploy Applications to Production","_id":"67adbe5b6a179ddaeaee8cbf"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adbe5b6a179ddaeaee8cc0"},{"title":"Basic Programming Concepts","_id":"67adbe5b6a179ddaeaee8cc1"},{"title":"Computer with Internet Connection","_id":"67adbe5b6a179ddaeaee8cc2"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adbf3802d3be26f001b124
+$1131
+{"thumbnail":{"public_id":"uploads/1739439928566-904074793.jpeg"},"_id":"67adbf3802d3be26f001b124","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adbf3802d3be26f001b125"},{"title":"Build Real-World Projects","_id":"67adbf3802d3be26f001b126"},{"title":"Master React.js and Node.js","_id":"67adbf3802d3be26f001b127"},{"title":"Database Design with MongoDB","_id":"67adbf3802d3be26f001b128"},{"title":"Deploy Applications to Production","_id":"67adbf3802d3be26f001b129"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adbf3802d3be26f001b12a"},{"title":"Basic Programming Concepts","_id":"67adbf3802d3be26f001b12b"},{"title":"Computer with Internet Connection","_id":"67adbf3802d3be26f001b12c"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adbfa8002b912c3c5c4370
+$1131
+{"thumbnail":{"public_id":"uploads/1739440039871-426122960.jpeg"},"_id":"67adbfa8002b912c3c5c4370","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adbfa8002b912c3c5c4371"},{"title":"Build Real-World Projects","_id":"67adbfa8002b912c3c5c4372"},{"title":"Master React.js and Node.js","_id":"67adbfa8002b912c3c5c4373"},{"title":"Database Design with MongoDB","_id":"67adbfa8002b912c3c5c4374"},{"title":"Deploy Applications to Production","_id":"67adbfa8002b912c3c5c4375"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adbfa8002b912c3c5c4376"},{"title":"Basic Programming Concepts","_id":"67adbfa8002b912c3c5c4377"},{"title":"Computer with Internet Connection","_id":"67adbfa8002b912c3c5c4378"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}
+*3
+$3
+set
+$24
+67adc0f30b03d15f6c1eb0d3
+$2548
+{"$__":{"activePaths":{"paths":{"demoUrl":"init","level":"init","tags":"init","price":"init","description":"init","name":"init","ratings":"init","purschase":"init","_id":"init","estimatedPrice":"init","thumbnail.public_id":"init","benefit":"init","prerequistites":"init","reviews":"init","courseData":"init","__v":"init"},"states":{"require":{},"default":{},"init":{"_id":true,"name":true,"description":true,"price":true,"estimatedPrice":true,"thumbnail.public_id":true,"tags":true,"level":true,"demoUrl":true,"benefit":true,"prerequistites":true,"ratings":true,"purschase":true,"reviews":true,"courseData":true,"__v":true}}},"skipId":true,"selected":{"courseData.suggestion":0,"courseData.comments":0,"courseData.videoUrl":0,"courseData.links":0},"exclude":true,"getters":{"thumbnail":{"public_id":"uploads/1739440371121-956960969.jpeg"}},"nestedPath":"thumbnail"},"$isNew":false,"_doc":{"thumbnail":{"public_id":"uploads/1739440371121-956960969.jpeg"},"_id":"67adc0f30b03d15f6c1eb0d3","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adc0f30b03d15f6c1eb0d4"},{"title":"Build Real-World Projects","_id":"67adc0f30b03d15f6c1eb0d5"},{"title":"Master React.js and Node.js","_id":"67adc0f30b03d15f6c1eb0d6"},{"title":"Database Design with MongoDB","_id":"67adc0f30b03d15f6c1eb0d7"},{"title":"Deploy Applications to Production","_id":"67adc0f30b03d15f6c1eb0d8"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adc0f30b03d15f6c1eb0d9"},{"title":"Basic Programming Concepts","_id":"67adc0f30b03d15f6c1eb0da"},{"title":"Computer with Internet Connection","_id":"67adc0f30b03d15f6c1eb0db"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0},"thumbnail":{"public_id":"uploads/1739440371121-956960969.jpeg","image_url":"https://lms-bucket-project.s3.ap-southeast-1.amazonaws.com/uploads/1739440371121-956960969.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA4T4LSKH6VEFNEH56%2F20250213%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250213T095333Z&X-Amz-Expires=3600&X-Amz-Signature=789623e3551e274b20df18502a45b436b9b5fe47c6052ee354757e56ca5f24cf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"}}
+*3
+$3
+set
+$24
+67adc188fb6279f50ed6e794
+$1131
+{"thumbnail":{"public_id":"uploads/1739440520367-370620953.jpeg"},"_id":"67adc188fb6279f50ed6e794","name":"Complete MERN Stack Developer Course 2024","description":"Master the MERN Stack (MongoDB, Express.js, React.js, Node.js) and build real-world applications from scratch","price":499,"estimatedPrice":999,"tags":"programming,web development,mern stack","level":"Intermediate","demoUrl":"https://www.youtube.com/watch?v=demo123","benefit":[{"title":"Learn Modern Web Development","_id":"67adc188fb6279f50ed6e795"},{"title":"Build Real-World Projects","_id":"67adc188fb6279f50ed6e796"},{"title":"Master React.js and Node.js","_id":"67adc188fb6279f50ed6e797"},{"title":"Database Design with MongoDB","_id":"67adc188fb6279f50ed6e798"},{"title":"Deploy Applications to Production","_id":"67adc188fb6279f50ed6e799"}],"prerequistites":[{"title":"Basic HTML, CSS, JavaScript Knowledge","_id":"67adc188fb6279f50ed6e79a"},{"title":"Basic Programming Concepts","_id":"67adc188fb6279f50ed6e79b"},{"title":"Computer with Internet Connection","_id":"67adc188fb6279f50ed6e79c"}],"ratings":0,"purschase":0,"reviews":[],"courseData":[],"__v":0}

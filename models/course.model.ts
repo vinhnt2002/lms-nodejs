@@ -32,12 +32,12 @@ interface ICourseData extends Document {
   comments: IComment[];
 }
 
-interface ICourse extends Document {
+export interface ICourse extends Document {
   name: string;
   description?: string;
   price: number;
   estimatedPrice?: number;
-  thumbnail: object;
+  thumbnail: IThumbnail;
   tags: string;
   level: string;
   demoUrl: string;
@@ -47,6 +47,11 @@ interface ICourse extends Document {
   courseData: ICourseData[];
   ratings?: number;
   purschase?: number;
+}
+
+export interface IThumbnail extends Document {
+  public_id: string,
+  image_url: string
 }
 
 const reviewSchema = new Schema<IReview>({

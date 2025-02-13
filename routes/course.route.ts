@@ -4,7 +4,7 @@ import { authorized, isAuthenticated } from '../middleware/auth'
 
 const courseRouter = express.Router()
 
-courseRouter.post('/create-course', isAuthenticated, authorized("admin") ,uploadCourse)
+courseRouter.post('/create-course' ,uploadCourse)
 
 courseRouter.put('/update-course/:id', isAuthenticated, authorized("admin") ,updateCourse)
 
