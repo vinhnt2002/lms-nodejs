@@ -81,7 +81,7 @@ export const updateCourse = CatchAsyncErrors(
     try {
       const data = req.body;
       const thumbnail = data.thumbnail;
-      const public_id = data.public_id
+      const public_id = data.public_id;
       const courseId = req.params.id;
 
       if (thumbnail) {
@@ -89,7 +89,7 @@ export const updateCourse = CatchAsyncErrors(
           (typeof thumbnail === "string" && thumbnail.startsWith("http")) ||
           (!Array.isArray(thumbnail) && thumbnail.data)
             ? await updateImageS3(
-              public_id|| "",
+                public_id || "",
                 typeof thumbnail === "string" ? thumbnail : thumbnail.data,
                 typeof thumbnail === "string" ? "image.jpg" : thumbnail.name
               )
@@ -102,7 +102,7 @@ export const updateCourse = CatchAsyncErrors(
         };
       }
 
-      const course: ICourse| null = await courseModel.findByIdAndUpdate(
+      const course: ICourse | null = await courseModel.findByIdAndUpdate(
         courseId,
         { $set: data },
         { new: true }
@@ -125,30 +125,30 @@ export const getSingleCourse = CatchAsyncErrors(
     try {
       const courseId = req.params.id;
       const isCachedCourse = await redis.get(courseId);
-console.log(courseId)
+      console.log(courseId);
       let course: ICourse;
-      
+
       if (isCachedCourse) {
-        console.log("go here")
+        console.log("go here");
         course = JSON.parse(isCachedCourse);
-        console.log(course)
-        course = await getCourseWithSignedUrlServices(course) || course;
+        console.log(course);
+        course = (await getCourseWithSignedUrlServices(course)) || course;
       } else {
-        console.log("go here1")
+        console.log("go here1");
         course = await courseModel
           .findById(courseId)
           .select(
             "-courseData.suggestion -courseData.comments -courseData.videoUrl -courseData.links"
           );
-          
-        course = await getCourseWithSignedUrlServices(course) || course;
-        
+
+        course = (await getCourseWithSignedUrlServices(course)) || course;
+
         await redis.set(courseId, JSON.stringify(course));
       }
 
       res.status(200).json({
         success: true,
-        course, 
+        course,
       });
     } catch (error: any) {
       return next(new ErrorHandler(error.message, 500));
